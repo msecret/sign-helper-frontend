@@ -1,0 +1,16 @@
+{
+  "name": "sign-frontend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile-functional": "tsc --outDir static ./src/test/functional/server.ts",
+    "fake-api": "nodemon ./static/test/functional/server.js",
+    "watch-compile": "tsc -w --outDir static ./src/test/functional/server.ts"
+  },
+  "dependencies": {
+    "nodemon": "^1.11.0",
+    "smocks": "^7.1.0",
+    "typescript": "^2.2.1"
+  }
+}
